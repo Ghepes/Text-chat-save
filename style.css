@@ -1,0 +1,72 @@
+/* style.css 
+by Iulian Ghepes delegat CEO Studio Wromo 2024 */
+
+
+body {
+    content: "style.css";
+    color: #000c80;
+    font-weight: bold;
+    font-size: 0.8em;
+    font-family: monospace;
+    padding-left: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #000c80;
+    border-top: 1px solid #000c80;
+    text-align: right;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000c80;
+}
+
+label {
+    font-weight: bold;
+    color: #000c80;
+    display: block;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+div {
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000c80;
+
+}
+
+form {
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000c80;
+}
+
+button {
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000c80;
+}
+

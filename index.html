@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Formular și salvare cuvânt în fișier</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('form').submit(function(e) {
+        e.preventDefault();
+        var inputText = $('#input-text').val();
+
+        // Salvare cuvânt în fișier prin cererea HTTP către server
+        $.ajax({
+          url: 'salvare.php',
+          method: 'POST',
+          data: { text: inputText },
+          success: function(response) {
+            if (response === "success") {
+              // Resetează valoarea câmpului de introducere
+              $('#input-text').val('');
+            }
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            console.log(textStatus + ': ' + errorThrown);
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>Formular și salvare cuvânt în fișier</h1>
+  <form>
+    <label for="input-text">Introduceți un cuvânt:</label>
+    <input type="text" id="input-text" name="input-text">
+    <button type="submit">Salvare</button>
+  </form>
+</body>
+</html>
